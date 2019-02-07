@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCE8ohZi4rAFzw8dcAU3SB87B4WiXKGujA",
+    authDomain: "ng-miracle-bus-track.firebaseapp.com",
+    databaseURL: "https://ng-miracle-bus-track.firebaseio.com",
+    projectId: "ng-miracle-bus-track",
+    storageBucket: "ng-miracle-bus-track.appspot.com",
+    messagingSenderId: "375981870335"
+  },
+  
 };
 
 /*
