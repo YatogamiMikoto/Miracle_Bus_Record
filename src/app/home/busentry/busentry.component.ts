@@ -26,7 +26,7 @@ export class BusentryComponent implements OnInit, OnDestroy {
   }
 
   onSubmit(form: NgForm){
-    this.homeService.homeServices(form.value.busid,form.value.itime,form.value.otime);
+    this.homeService.homeServices(form.value.busid,form.value.time,form.value.state);
     this.authService.refresh();
   }
 

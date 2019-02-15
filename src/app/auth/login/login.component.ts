@@ -27,4 +27,9 @@ export class LoginComponent implements OnInit {
      password: this.loginForm.value.password
    });
   }
+  
+  
+  onGoogleSubmit(){
+    this.authService.googlelogin();
+  }
 }

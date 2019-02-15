@@ -4,7 +4,6 @@
       fxLayoutAlign="center center"
       fxLayoutGap="30px"
       [formGroup]="loginForm"
-      (ngSubmit)="onSubmit()"
       class="form-align">
       <mat-form-field appearance="outline">
           <mat-label>Email</mat-label>
@@ -26,6 +25,7 @@
         <mat-hint>Please enter your password.</mat-hint>
         <mat-error>Missing password.</mat-error>
       </mat-form-field>
-      <button type="submit" mat-raised-button color="primary" [disabled]="loginForm.invalid">Submit</button>
+      <button type="submit" (click)=onSubmit() mat-raised-button color="primary" [disabled]="loginForm.invalid">Submit</button>
+      <button mat-button (click)=onGoogleSubmit() color="primary">Sign In with Google Instead</button>
     </form>
 </section>

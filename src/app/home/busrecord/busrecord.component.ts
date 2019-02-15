@@ -14,7 +14,7 @@ export class BusrecordComponent implements OnInit,AfterViewInit, OnDestroy  {
   @ViewChild(MatPaginator) paginator:MatPaginator;
   private exChangedSubscription: Subscription;
 
-  displayedColumns=['date','busid','intime','outtime'];
+  displayedColumns=['date','busid','time','state'];
   dataSource= new  MatTableDataSource<Home>();
 
   constructor(private homeService: HomeService) { }

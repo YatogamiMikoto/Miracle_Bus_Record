@@ -1,0 +1,16 @@
+<form fxLayout="column" fxLayoutGap="10px" #f="ngForm" fxLayoutAlign="center center" (ngSubmit)="onSubmit(f)">
+    <mat-form-field fxflex="100%">
+      <mat-select placeholder="Select bus" ngModel name="busidgraph">
+        <mat-option value="A">Bus A</mat-option>
+        <mat-option value="B">Bus B</mat-option>
+        <mat-option value="C">Bus C</mat-option>
+        <mat-option value="D">Bus D</mat-option>
+        <mat-option value="E">Bus E</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-button mat-raised-button type="submit" color="primary">Get Graph  ></button> 
+</form>
+
+<canvas id="myChart"></canvas>
+
+

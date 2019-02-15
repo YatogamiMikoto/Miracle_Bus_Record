@@ -5,6 +5,7 @@ import { User } from './user.model';
 import { AuthData } from './auth-data.model';
 import { AngularFireAuth } from 'angularfire2/auth'
 import { HomeService } from '../home/home.service'
+import * as firebase from 'firebase/app';
 
 @Injectable()
 export class AuthService{
@@ -50,6 +51,11 @@ export class AuthService{
             console.log(error);
           });
       } 
+
+      googlelogin(){
+        this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+      }
+
 
     logout(){
         this.afAuth.auth.signOut();

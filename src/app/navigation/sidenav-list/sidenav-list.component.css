@@ -1,10 +1,10 @@
 a{
     text-decoration:none;
-    color:white;
+    color:black;
 }
 
 a:active,
 a:hover{
-    color:lightgrey;
+    color:#2173ca;
 }
 
